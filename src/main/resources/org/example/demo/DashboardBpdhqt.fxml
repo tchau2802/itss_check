@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.fxml.FXMLLoader?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.DashboardBpdhqtController">
+    <children>
+        <HBox alignment="CENTER" layoutX="150.0" layoutY="-1.0" prefHeight="44.0" prefWidth="650.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text fill="#f9fdfb" strokeType="OUTSIDE" strokeWidth="0.0" text="Bộ phận đặt hàng quốc tế" textAlignment="CENTER" wrappingWidth="561.0120544433594">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8-language-24.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8-chat-bubble-24.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8-bell-24%20(1).png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="54.0" prefHeight="41.0" prefWidth="660.0" style="-fx-background-color: seashell;" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label text="Đặt hàng quốc tế">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../Downloads/icons8-more-than-32.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <AnchorPane layoutX="154.0" layoutY="101.0" prefHeight="495.0" prefWidth="641.0">
+            <children>
+                <HBox layoutX="19.0" layoutY="116.0" prefHeight="80.0" prefWidth="244.0">
+                    <children>
+                        <ImageView fitHeight="90.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox prefHeight="53.0" prefWidth="66.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="x">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="8.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng số yêu cầu">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="8.0" />
+                                    </VBox.margin>
+                                </Text>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox layoutX="19.0" layoutY="258.0" prefHeight="90.0" prefWidth="303.0">
+                    <children>
+                        <ImageView fitHeight="90.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox prefHeight="53.0" prefWidth="66.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="x">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="8.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn đã đặt ">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="8.0" />
+                                    </VBox.margin>
+                                </Text>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <fx:include source="Sidebar.fxml"/>
+    </children>
+</AnchorPane>
+
+
+
+
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.geometry.Rectangle2D?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<?import javafx.scene.shape.Circle?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<?import javafx.scene.text.Text?>-->
+
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.DashboardBpdhqtController">-->
+<!--   <children>-->
+<!--      <HBox alignment="CENTER" layoutX="150.0" layoutY="-1.0" prefHeight="44.0" prefWidth="650.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0">-->
+<!--         <children>-->
+<!--            <Text fill="#f9fdfb" strokeType="OUTSIDE" strokeWidth="0.0" text="Bộ phận đặt hàng quốc tế" textAlignment="CENTER" wrappingWidth="561.0120544433594">-->
+<!--               <font>-->
+<!--                  <Font size="34.0" />-->
+<!--               </font>-->
+<!--            </Text>-->
+<!--            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../images/icons8-language-24.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../images/icons8-chat-bubble-24.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--            <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../images/icons8-bell-24%20(1).png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--         </children>-->
+<!--      </HBox>-->
+<!--      <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="54.0" prefHeight="41.0" prefWidth="660.0" style="-fx-background-color: seashell;" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0">-->
+<!--         <children>-->
+<!--            <Label text="Đặt hàng quốc tế">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../../../../Downloads/icons8-more-than-32.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="20.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--         </children>-->
+<!--      </HBox>-->
+<!--      <AnchorPane layoutX="154.0" layoutY="101.0" prefHeight="495.0" prefWidth="641.0">-->
+<!--         <children>-->
+<!--            <HBox layoutX="19.0" layoutY="116.0" prefHeight="80.0" prefWidth="244.0">-->
+<!--               <children>-->
+<!--                  <ImageView fitHeight="90.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />-->
+<!--                  <VBox prefHeight="53.0" prefWidth="66.0">-->
+<!--                     <children>-->
+<!--                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="x">-->
+<!--                           <font>-->
+<!--                              <Font size="24.0" />-->
+<!--                           </font>-->
+<!--                           <VBox.margin>-->
+<!--                              <Insets top="8.0" />-->
+<!--                           </VBox.margin>-->
+<!--                        </Text>-->
+<!--                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng số yêu cầu">-->
+<!--                           <font>-->
+<!--                              <Font size="24.0" />-->
+<!--                           </font>-->
+<!--                           <VBox.margin>-->
+<!--                              <Insets top="8.0" />-->
+<!--                           </VBox.margin>-->
+<!--                        </Text>-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--               </children>-->
+<!--            </HBox>-->
+<!--            <HBox layoutX="19.0" layoutY="258.0" prefHeight="90.0" prefWidth="303.0">-->
+<!--               <children>-->
+<!--                  <ImageView fitHeight="90.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />-->
+<!--                  <VBox prefHeight="53.0" prefWidth="66.0">-->
+<!--                     <children>-->
+<!--                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="x">-->
+<!--                           <font>-->
+<!--                              <Font size="24.0" />-->
+<!--                           </font>-->
+<!--                           <VBox.margin>-->
+<!--                              <Insets top="8.0" />-->
+<!--                           </VBox.margin>-->
+<!--                        </Text>-->
+<!--                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn đã đặt ">-->
+<!--                           <font>-->
+<!--                              <Font size="24.0" />-->
+<!--                           </font>-->
+<!--                           <VBox.margin>-->
+<!--                              <Insets top="8.0" />-->
+<!--                           </VBox.margin>-->
+<!--                        </Text>-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--               </children>-->
+<!--            </HBox>-->
+<!--         </children>-->
+<!--      </AnchorPane>-->
+<!--      <VBox prefHeight="600.0" prefWidth="163.0" style="-fx-background-color: thistle;">-->
+<!--         <children>-->
+<!--            <ImageView fitHeight="60.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Screenshot%202024-05-18%20015738.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--            <HBox maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="98.0">-->
+<!--               <children>-->
+<!--                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-male-user-50.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--                  <VBox alignment="CENTER" prefHeight="89.0" prefWidth="74.0">-->
+<!--                     <children>-->
+<!--                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phạm Thái Châu" />-->
+<!--                        <HBox prefHeight="26.0" prefWidth="65.0">-->
+<!--                           <children>-->
+<!--                              <Circle fill="#25aa49" radius="5.0" stroke="BLACK" strokeType="INSIDE" />-->
+<!--                              <Label text="Online" />-->
+<!--                           </children>-->
+<!--                        </HBox>-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--               </children>-->
+<!--            </HBox>-->
+<!--            <Button graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Trang chủ">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-home-24.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--               <VBox.margin>-->
+<!--                  <Insets />-->
+<!--               </VBox.margin>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnDonDatHang" graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Đơn đặt hàng">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-purchase-order-30.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnSanPham" graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Sản phẩm">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-product-24.png" />-->
+<!--                     </image>-->
+<!--                     <viewport>-->
+<!--                        <Rectangle2D />-->
+<!--                     </viewport>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnDonHang" graphicTextGap="10.0" layoutX="10.0" layoutY="254.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Đơn hàng">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-user-30.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Tài khoản">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-user-30.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Cài đặt">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-setting-24.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Trợ giúp">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-help-32.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--            <Button graphicTextGap="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: none;" text="Đăng xuất">-->
+<!--               <graphic>-->
+<!--                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                     <image>-->
+<!--                        <Image url="@../images/icons8-sign-out-24.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
+<!--               </graphic>-->
+<!--               <opaqueInsets>-->
+<!--                  <Insets />-->
+<!--               </opaqueInsets>-->
+<!--            </Button>-->
+<!--         </children>-->
+<!--      </VBox>-->
+<!--   </children>-->
+<!--</AnchorPane>-->
+
+
