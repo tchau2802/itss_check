@@ -6,11 +6,9 @@ import javafx.collections.ObservableList;
 public class CartManager {
     private static CartManager instance;
     private ObservableList<ChiTietMatHangBpdhqt> cartItems;
-    private ObservableList<String> sites;
 
     private CartManager() {
         cartItems = FXCollections.observableArrayList();
-        sites = FXCollections.observableArrayList("Site A", "Site B", "Site C");
     }
 
     public static CartManager getInstance() {
@@ -28,7 +26,23 @@ public class CartManager {
         return cartItems;
     }
 
-    public ObservableList<String> getSites() {
+    public ObservableList<ChiTietMatHangBpdhqt> getItemsBySite(String site) {
+        ObservableList<ChiTietMatHangBpdhqt> filteredItems = FXCollections.observableArrayList();
+        for (ChiTietMatHangBpdhqt item : cartItems) {
+            if (item.getThuocSite().equals(site)) {
+                filteredItems.add(item);
+            }
+        }
+        return filteredItems;
+    }
+
+    public ObservableList<String> getAllSites() {
+        ObservableList<String> sites = FXCollections.observableArrayList();
+        for (ChiTietMatHangBpdhqt item : cartItems) {
+            if (!sites.contains(item.getThuocSite())) {
+                sites.add(item.getThuocSite());
+            }
+        }
         return sites;
     }
 }

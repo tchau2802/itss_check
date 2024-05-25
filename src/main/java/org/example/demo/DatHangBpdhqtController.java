@@ -67,7 +67,8 @@ public class DatHangBpdhqtController {
                     currentProduct.getThuocSite(),
                     currentProduct.getGiaTien(),
                     currentProduct.getThoiGianGiao(),
-                    phuongThuc
+                    phuongThuc,
+                    soLuong
             );
 
             CartManager.getInstance().addToCart(cartItem);
@@ -76,6 +77,12 @@ public class DatHangBpdhqtController {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/demo/DatDonBpdhqt.fxml"));
                 Parent root = loader.load();
+
+                DatDonBpdhqtController controller = loader.getController();
+                if (controller != null) {
+                    controller.updateTableView();
+                    controller.setSiteInComboBox(cartItem.getThuocSite());
+                }
 
                 Stage stage = (Stage) maHangLabel.getScene().getWindow();
                 stage.setScene(new Scene(root));

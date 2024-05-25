@@ -8,10 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableRow;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TableColumn;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -59,7 +56,7 @@ public class ChiTietMatHangBpdhqtController {
         colThuocSite.setCellValueFactory(new PropertyValueFactory<>("thuocSite"));
         colGiaTien.setCellValueFactory(new PropertyValueFactory<>("giaTien"));
         colThoiGianGiao.setCellValueFactory(new PropertyValueFactory<>("thoiGianGiao"));
-        colDatHang.setCellValueFactory(new PropertyValueFactory<>("datHang"));
+        colDatHang.setCellValueFactory(new PropertyValueFactory<>("phuongThuc"));
 
         masterData.addAll(getItems());
 
@@ -104,21 +101,21 @@ public class ChiTietMatHangBpdhqtController {
 
     private ObservableList<ChiTietMatHangBpdhqt> getItems() {
         ObservableList<ChiTietMatHangBpdhqt> items = FXCollections.observableArrayList();
-        items.add(new ChiTietMatHangBpdhqt("KT001", "Máy tính xách tay", "Điện tử", "Site A", "15000000", "01-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("NS002", "Bàn làm việc", "Nội thất", "Site B", "2500000", "05-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("IT003", "Máy chủ", "Điện tử", "Site A", "50000000", "10-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("KD004", "Điện thoại di động", "Điện tử", "Site C", "10000000", "15-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("KH005", "Máy in", "Điện tử", "Site B", "7000000", "20-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("MS006", "Ghế xoay văn phòng", "Nội thất", "Site A", "1500000", "25-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("SX007", "Nguyên liệu sản xuất", "Công nghiệp", "Site C", "20000000", "30-01-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("KV008", "Xe nâng", "Công nghiệp", "Site B", "30000000", "05-02-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("RD009", "Thiết bị nghiên cứu", "Điện tử", "Site A", "40000000", "10-02-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("BL010", "Sản phẩm trưng bày", "Khác", "Site C", "5000000", "15-02-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("TC011", "Phần mềm kế toán", "Phần mềm", "Site B", "8000000", "20-02-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("MK012", "Poster quảng cáo", "Khác", "Site A", "3000000", "25-02-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("DV013", "Máy fax", "Điện tử", "Site C", "2000000", "02-03-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("BT014", "Thiết bị sửa chữa", "Công nghiệp", "Site B", "6000000", "07-03-2023", "Đặt hàng"));
-        items.add(new ChiTietMatHangBpdhqt("HC015", "Văn phòng phẩm", "Nội thất", "Site A", "1000000", "12-03-2023", "Đặt hàng"));
+        items.add(new ChiTietMatHangBpdhqt("KT001", "Máy tính xách tay", "Điện tử", "Site A", "15000000", "01-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("NS002", "Bàn làm việc", "Nội thất", "Site B", "2500000", "05-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("IT003", "Máy chủ", "Điện tử", "Site A", "50000000", "10-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("KD004", "Điện thoại di động", "Điện tử", "Site C", "10000000", "15-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("KH005", "Máy in", "Điện tử", "Site B", "7000000", "20-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("MS006", "Ghế xoay văn phòng", "Nội thất", "Site A", "1500000", "25-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("SX007", "Nguyên liệu sản xuất", "Công nghiệp", "Site C", "20000000", "30-01-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("KV008", "Xe nâng", "Công nghiệp", "Site B", "30000000", "05-02-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("RD009", "Thiết bị nghiên cứu", "Điện tử", "Site A", "40000000", "10-02-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("BL010", "Sản phẩm trưng bày", "Khác", "Site C", "5000000", "15-02-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("TC011", "Phần mềm kế toán", "Phần mềm", "Site B", "8000000", "20-02-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("MK012", "Poster quảng cáo", "Khác", "Site A", "3000000", "25-02-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("DV013", "Máy fax", "Điện tử", "Site C", "2000000", "02-03-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("BT014", "Thiết bị sửa chữa", "Công nghiệp", "Site B", "6000000", "07-03-2023", "Đặt hàng", 1));
+        items.add(new ChiTietMatHangBpdhqt("HC015", "Văn phòng phẩm", "Nội thất", "Site A", "1000000", "12-03-2023", "Đặt hàng", 1));
         return items;
     }
 
@@ -139,7 +136,6 @@ public class ChiTietMatHangBpdhqtController {
             e.printStackTrace();
         }
     }
-
 }
 
 

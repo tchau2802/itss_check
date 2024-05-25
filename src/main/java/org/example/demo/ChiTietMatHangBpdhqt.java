@@ -1,23 +1,28 @@
 package org.example.demo;
 
 public class ChiTietMatHangBpdhqt {
+
     private String maHang;
     private String tenHang;
     private String loai;
     private String thuocSite;
     private String giaTien;
     private String thoiGianGiao;
-    private String datHang;
+    private String phuongThuc;
+    private int soLuong;
 
-    public ChiTietMatHangBpdhqt(String maHang, String tenHang, String loai, String thuocSite, String giaTien, String thoiGianGiao, String datHang) {
+    public ChiTietMatHangBpdhqt(String maHang, String tenHang, String loai, String thuocSite, String giaTien, String thoiGianGiao, String phuongThuc, int soLuong) {
         this.maHang = maHang;
         this.tenHang = tenHang;
         this.loai = loai;
         this.thuocSite = thuocSite;
         this.giaTien = giaTien;
         this.thoiGianGiao = thoiGianGiao;
-        this.datHang = datHang;
+        this.phuongThuc = phuongThuc;
+        this.soLuong = soLuong;
     }
+
+    // Getters and setters
 
     public String getMaHang() {
         return maHang;
@@ -67,11 +72,24 @@ public class ChiTietMatHangBpdhqt {
         this.thoiGianGiao = thoiGianGiao;
     }
 
-    public String getDatHang() {
-        return datHang;
+    public String getPhuongThuc() {
+        return phuongThuc;
     }
 
-    public void setDatHang(String datHang) {
-        this.datHang = datHang;
+    public void setPhuongThuc(String phuongThuc) {
+        this.phuongThuc = phuongThuc;
+    }
+
+    public int getSoLuong() {
+        return soLuong;
+    }
+
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
+    }
+
+    public String getTongTien() {
+        // Assuming that the total price is calculated by multiplying price by quantity
+        return String.valueOf(Integer.parseInt(giaTien) * soLuong);
     }
 }
